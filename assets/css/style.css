@@ -1,0 +1,194 @@
+/* color scheme
+2e#2e2e / #fff / #000 / #1d2c2f  */
+
+/* font-family
+font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif; */
+
+@font-face {
+    font-family: 'Lora';
+    src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+/* GLOBAL STYLES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 1400px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3, footer, .footer {
+    font-family: 'Lora', serif;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8rem;
+    word-spacing: 0.4em;
+    line-height: 1.5em;
+    padding: 10px;
+    margin: auto;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+/* HEADER STYLE */
+
+header{
+    height: 100vh;
+    background-image: url(../img/design-interior-1.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+h1{
+    font-size: 3rem;
+    word-spacing: 0.4em;
+    text-align: center;
+    padding: 35vh 70vw 4vh 5vw;
+}
+
+h2{
+    font-size: 1.3rem;
+    text-align: center;
+    word-spacing: 0.4em;
+    margin-right: 65vw ;
+}
+
+/* NAVIGATION STYLE */
+
+nav{
+    height: 10vh;
+    background-color: #2e2e2e;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 75px;
+    height: 50px;
+    margin: 5px;
+}
+
+nav a{
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px;
+    margin-right: 60px;
+    font-size: 0.8rem;
+}
+
+/* MAIN STYLE */
+
+/* OUR STORY */
+
+.ourStory {
+    height: 100vh;
+    background-color: #2e2e2e;
+    color: #fff;
+    background-image: url(../img/story.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.textOurStory{
+    width: 450px;
+    padding-top: 25vh;
+    margin-left: 60vw;
+}
+
+#story {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* FEATURED */
+
+.featured{
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 10vh;
+}
+
+#feature{
+    text-align: center;
+    margin: auto;
+}
+
+.featured p{
+    width: 500px;
+}
+
+.imageselection{
+    display: flex;
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.imageselection img{
+    width: 350px;
+    margin: 25px
+}
+
+.featured iframe{
+    display: block;
+    width: 400px;
+    height: 240px;
+    margin: auto;
+}
+
+/* GET IN TOUCH */
+
+.getInTouch{
+    background-color: #2e2e2e;
+    color: #fff;
+    height: 50vh;
+    padding: 10vh 5vw;
+}
+
+.textContact{
+    width: 400px;
+}
+
+/* FOOTER */
+
+footer{
+    color: #fff;
+    background-color: #1d2c2f;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footerLinks a{
+    padding: 5px;
+    margin: 10px;
+}
