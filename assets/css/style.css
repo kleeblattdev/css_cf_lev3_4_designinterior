@@ -63,19 +63,20 @@ header{
     background-repeat: no-repeat;
 }
 
+.headline{
+    margin-right: 60vw;
+    padding-top: 40vh;
+    text-align: center;
+    word-spacing: 0.4em;
+
+}
 
 h1{
     font-size: 3rem;
-    word-spacing: 0.4em;
-    text-align: center;
-    padding: 35vh 70vw 4vh 5vw;
 }
 
 h2{
     font-size: 1.3rem;
-    text-align: center;
-    word-spacing: 0.4em;
-    margin-right: 65vw ;
 }
 
 /* NAVIGATION STYLE */
@@ -114,11 +115,12 @@ nav a{
     background-image: url(../img/story.jpg);
     background-position: left;
     background-repeat: no-repeat;
+    background-size: 60%;
 }
 
 .textOurStory{
-    width: 450px;
-    padding-top: 25vh;
+    width: 455px;
+    padding-top: 22vh;
     margin-left: 60vw;
 }
 
@@ -138,28 +140,26 @@ nav a{
 
 #feature{
     text-align: center;
-    margin: auto;
 }
 
 .featured p{
-    width: 500px;
+    text-align: center;
 }
 
 .imageselection{
-    display: flex;
     width: 1200px;
-    margin: 20px auto;
+    margin: auto;
 }
 
 .imageselection img{
-    width: 350px;
-    margin: 25px
+    width: 300px;
+    margin: 25px;
 }
 
 .featured iframe{
     display: block;
     width: 400px;
-    height: 240px;
+    height: 250px;
     margin: auto;
 }
 
@@ -187,8 +187,94 @@ footer{
     align-items: center;
 }
 
-
 .footerLinks a{
     padding: 5px;
     margin: 10px;
 }
+
+/* MEDIA QUERIES WIDTH: 600px */
+
+@media only screen and  (max-width: 600px) {
+
+    /* GLOBAL STYLE 600px */
+
+h3{
+    font-size: 1.5rem;
+}
+
+a, p{
+    font-size: 0.7rem;
+}
+
+
+/* HEADER WIDTH 600px */
+
+header{
+    background-size: 60%;
+}
+
+header h2{
+    font-size: 0.8rem;
+    word-spacing: 0.3em;
+}
+
+    /* NAVIGATION WIDTH 600px */
+
+nav a{
+    margin: 0;
+}
+
+nav img{
+    width: 60px;
+    height: 35px;
+}
+
+/* OUR STORY WIDTH 600px */
+
+.ourStory {
+    background-position: top;
+}
+
+.textOurStory{
+    padding-top: 40vh;
+    margin: auto;
+}
+
+#story {
+    text-align: center;
+    padding: 10px;
+}
+
+/* FEATURED */
+
+.featured{
+    height: 200vh;
+}
+
+.imageselection{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.imageselection img{
+    width: 400px;
+    margin: 25px auto;
+}
+
+.featured iframe{
+    display: block;
+    width: 400px;
+    height: 250px;
+    margin: auto;
+}
+
+/* GET IN TOUCH WIDTH 600px */
+
+
+
+}
+
+
+
+
